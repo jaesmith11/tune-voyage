@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Tune Voyage</string>
+    <string name="song_title">Song Title</string>
+    <string name="artist_name">Artist Name</string>
+    <string name="album_name">Album Name</string>
+    <string name="release_date">Release Date</string>
+    <string name="choose_continent">Choose the continent:</string>
+    <string name="choose_decade">Choose the decade:</string>
+
+    <string-array name="decades_array">
+        <item>1900s</item>
+        <item>1910s</item>
+        <item>1920s</item>
+        <item>1930s</item>
+        <item>1940s</item>
+        <item>1950s</item>
+        <item>1960s</item>
+        <item>1970s</item>
+        <item>1980s</item>
+        <item>1990s</item>
+        <item>2000s</item>
+        <item>NOW</item>
+    </string-array>
+
+    <string-array name="continent_array">
+        <item>Africa</item>
+        <item>Asia</item>
+        <item>Australia</item>
+        <item>Europe</item>
+        <item>North America</item>
+        <item>South America</item>
+    </string-array>
+
+</resources>
