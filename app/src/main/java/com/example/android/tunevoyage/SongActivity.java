@@ -1,7 +1,10 @@
 package com.example.android.tunevoyage;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -11,6 +14,7 @@ import java.util.ArrayList;
  */
 
 public class SongActivity extends AppCompatActivity{
+    private SongAdapter adapter;
     @Override
     protected  void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -34,7 +38,7 @@ public class SongActivity extends AppCompatActivity{
 
         // Create a SongAdapter thru the above ArrayList of songs
         // SongAdapter knows how to create list items for each item in list
-        SongAdapter adapter = new SongAdapter(this, songs);
+        adapter = new SongAdapter(this, songs);
 
         // Find the ListView object in the view hierarchy of the activity
         // list_view is the view ID of the ListView declared in the song_listview.xml file
@@ -42,5 +46,25 @@ public class SongActivity extends AppCompatActivity{
 
         // Make the ListView use the SongAdapter to display list items for each Song in the list.
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                Song currentSong = adapter.getItem(position);
+                if (currentSong != null) {
+                    String albumInfo = currentSong.getAlbumTitle();
+                    String songTitleInfo = currentSong.getSongTitle();
+                    String artistInfo = currentSong.getArtist();
+
+                    Intent playIntent = new Intent(SongActivity.this, NowPlayingActivity.class);
+                    playIntent.putExtra("Album", albumInfo);
+                    playIntent.putExtra("Song", songTitleInfo);
+                    playIntent.putExtra("Artist", artistInfo);
+                    startActivity(playIntent);
+                }
+
+
+            }
+        });
     }
 }

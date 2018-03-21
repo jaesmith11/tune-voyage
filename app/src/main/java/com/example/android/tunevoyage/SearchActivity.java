@@ -39,7 +39,7 @@ public class SearchActivity extends AppCompatActivity{
 
         continentSpinner = (Spinner) findViewById(R.id.continent_spinner);
         //Create an adapter using the string array and a default spinner layout
-        ArrayAdapter<CharSequence> continentAdapter =
+        final ArrayAdapter<CharSequence> continentAdapter =
                 ArrayAdapter.createFromResource(this, R.array.continent_array,
                         android.R.layout.simple_spinner_item);
         //Specify the layout to use when the list of choices appears
@@ -57,6 +57,8 @@ public class SearchActivity extends AppCompatActivity{
                 continentInput = continentSpinner.getSelectedItem().toString();
 
                 Intent searchIntent = new Intent(SearchActivity.this, SongActivity.class);
+                searchIntent.putExtra("Decade", decadeInput);
+                searchIntent.putExtra("Continent", continentInput);
                 startActivity(searchIntent);
             }
         });
