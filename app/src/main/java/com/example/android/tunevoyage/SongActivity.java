@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -40,12 +41,23 @@ public class SongActivity extends AppCompatActivity{
         // SongAdapter knows how to create list items for each item in list
         adapter = new SongAdapter(this, songs);
 
+
         // Find the ListView object in the view hierarchy of the activity
         // list_view is the view ID of the ListView declared in the song_listview.xml file
         ListView listView = (ListView)findViewById(R.id.list_view);
 
+
         // Make the ListView use the SongAdapter to display list items for each Song in the list.
         listView.setAdapter(adapter);
+
+        ImageView backButton = findViewById(R.id.back_from_list);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SongActivity.this, SearchActivity.class);
+                startActivity(intent);
+            }
+        });
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
