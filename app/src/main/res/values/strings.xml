@@ -6,6 +6,9 @@
     <string name="release_date">Release Date</string>
     <string name="choose_continent">Choose the continent:</string>
     <string name="choose_decade">Choose the decade:</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="search_tune_voyage">Search Tune Voyage</string>
+    <string name="your_playlist">Your playlist</string>
 
     <string-array name="decades_array">
         <item>1900s</item>

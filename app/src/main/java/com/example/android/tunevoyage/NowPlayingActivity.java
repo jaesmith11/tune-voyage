@@ -17,11 +17,16 @@ public class NowPlayingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.now_playing);
 
+        //Find the appropriate TextViews in the now_playing.xml file
         TextView playAlbum = findViewById(R.id.current_album_view);
         TextView playArtist = findViewById(R.id.current_artist_view);
         TextView playSong = findViewById(R.id.current_song_view);
+
+        //Find the ImageView in the now_playing.xml file to control navigation
         ImageView backButton = findViewById(R.id.back_from_nowplaying);
 
+        //Implement an OnClickListener to navigate back to the SongActivity.class
+        //This click will open the user's playlist
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -30,6 +35,8 @@ public class NowPlayingActivity extends AppCompatActivity {
             }
         });
 
+        //Find the extra information on Album, Artist, and Song that was sent from the SongActivity.java intent
+        //These Strings will populate the above TextViews to display information on the current song
         Bundle extras = getIntent().getExtras();
 
         if(extras!=null){

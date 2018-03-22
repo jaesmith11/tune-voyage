@@ -16,6 +16,9 @@ import java.util.ArrayList;
 
 public class SongActivity extends AppCompatActivity{
     private SongAdapter adapter;
+    private String decade;
+    private String continent;
+
     @Override
     protected  void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -49,6 +52,7 @@ public class SongActivity extends AppCompatActivity{
 
         // Make the ListView use the SongAdapter to display list items for each Song in the list.
         listView.setAdapter(adapter);
+
 
         ImageView backButton = findViewById(R.id.back_from_list);
         backButton.setOnClickListener(new View.OnClickListener() {
