@@ -33,12 +33,11 @@
         android:layout_height="wrap_content"
         style="@style/SubheadingStyle"
         android:text="@string/album_name"
-        android:paddingTop="@dimen/activity_vertical_margin"
         android:layout_gravity="center"/>
 
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:src="@drawable/crosley"
         android:layout_gravity="center"/>
 
@@ -46,7 +45,7 @@
         android:id="@+id/current_song_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="8dp"
+        android:padding="2dp"
         android:layout_gravity="center"
         style="@style/SongTitleStyle"
         android:text="@string/song_title"/>
@@ -63,7 +62,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="50dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -84,5 +82,5 @@
             android:layout_weight="1"/>
 
     </LinearLayout>
-
+    
 </LinearLayout>

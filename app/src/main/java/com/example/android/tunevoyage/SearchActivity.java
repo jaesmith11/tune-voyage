@@ -26,6 +26,7 @@ public class SearchActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.search_view);
 
+        //Locate instance of spinner for user's choice of decade
         decadeSpinner = (Spinner) findViewById(R.id.decade_spinner);
         //Create an adapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> decadeAdapter =
@@ -37,6 +38,7 @@ public class SearchActivity extends AppCompatActivity{
         decadeSpinner.setAdapter(decadeAdapter);
 
 
+        //Locate instance of spinner for user's choice of continent
         continentSpinner = (Spinner) findViewById(R.id.continent_spinner);
         //Create an adapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> continentAdapter =

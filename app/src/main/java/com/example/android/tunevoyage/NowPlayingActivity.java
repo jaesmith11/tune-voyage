@@ -12,6 +12,8 @@ import android.widget.TextView;
  */
 
 public class NowPlayingActivity extends AppCompatActivity {
+    private String continent;
+    private String decade;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +33,9 @@ public class NowPlayingActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(NowPlayingActivity.this, SongActivity.class);
+                intent.putExtra("Continent", continent);
+                System.out.println("NowPlayingActivity Continent backButton: " + continent);
+                intent.putExtra("Decade", decade);
                 startActivity(intent);
             }
         });
@@ -48,6 +53,9 @@ public class NowPlayingActivity extends AppCompatActivity {
 
             String song = (String) extras.get("Song");
             playSong.setText(song);
+
+            continent = (String) extras.get("Continent");
+            decade = (String) extras.get("Decade");
         }
 
     }

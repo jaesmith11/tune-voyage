@@ -4,13 +4,71 @@
     <string name="artist_name">Artist Name</string>
     <string name="album_name">Album Name</string>
     <string name="release_date">Release Date</string>
-    <string name="choose_continent">Choose the continent:</string>
-    <string name="choose_decade">Choose the decade:</string>
+    <string name="choose_continent">Continent:</string>
+    <string name="choose_decade">Decade:</string>
     <string name="now_playing">Now Playing</string>
-    <string name="search_tune_voyage">Search Tune Voyage</string>
-    <string name="your_playlist">Your playlist</string>
+    <string name="search_tune_voyage">Compose Tracklist</string>
+    <string name="your_playlist">Your Tracklist</string>
+    <string name="no_results">No Results Found...</string>
+    <string name="b_Maal">Baaba Maal</string>
+    <string name="e_Yeboah"><![CDATA[Elvis Yeboah & His Justice 7 Band]]></string>
+    <string name="f_TP"><![CDATA[Franco & T.P. OK]]></string>
+    <string name="l_Xianglan">Li Xianglan</string>
+    <string name="h_Bruhl">Heidi Brühl</string>
+    <string name="l_Jordan">Louis Jordan and His Tympany Five</string>
+    <string name="s_Caldas">Silvio Caldas</string>
+    <string name="t_Turpin">Tom Turpin</string>
+    <string name="dalbret">Dalbret</string>
+    <string name="e_Rivero">Edmundo Rivero</string>
+    <string name="w_Carter">Wilf Carter</string>
+    <string name="t_Haidouks">Taraf de Haidouks</string>
+    <string name="d_Antwoord">Die Antwoord</string>
+    <string name="boiro">Hamady Boiro</string>
+    <string name="ase">Engu Manim Ase</string>
+    <string name="serieux">Où Est le Sérieux</string>
+    <string name="samurai">Seven Samurai</string>
+    <string name="berlin">Berlin</string>
+    <string name="woman">Ain\'t That Just Like A Woman</string>
+    <string name="jurou">E Ela Não Jurou</string>
+    <string name="rag">St Louis Rag</string>
+    <string name="legionnaire">Le Légionnaire</string>
+    <string name="audacia">Audacia</string>
+    <string name="yodel">Lover\'s Lullaby Yodel</string>
+    <string name="sorrow">Sorrow, Only My Sorrow</string>
+    <string name="fire">Baby\'s On Fire</string>
+    <string name="fast">Fast</string>
+    <string name="weird">Weird</string>
+    <string name="slow">Slow</string>
+    <string name="africa">Africa</string>
+    <string name="asia">Asia</string>
+    <string name="europe">Europe</string>
+    <string name="north_america">North America</string>
+    <string name="south_america">South America</string>
+    <string name="australia">Australia</string>
+    <string name="unknown_album">Unknown Album</string>
+    <string name="toro">Lam Toro</string>
+    <string name="nganda_macampagne">Nganda Macampagne</string>
+    <string name="drifter">The Drifter</string>
+    <string name="ragtime">Piano-Roll Ragtime</string>
+    <string name="lullaby_yodel">Lover\'s Lullaby Yodel</string>
+    <string name="gypsies">Band of Gypsies</string>
+    <string name="tension">Ten$ion</string>
+    <string name="year_1992">1992</string>
+    <string name="year_1982">1982</string>
+    <string name="year_1973">1973</string>
+    <string name="year_1954">1954</string>
+    <string name="year_1969">1969</string>
+    <string name="year_1940">1940</string>
+    <string name="year_1932">1932</string>
+    <string name="year_1903">1903</string>
+    <string name="year_1911">1911</string>
+    <string name="year_1926">1926</string>
+    <string name="year_1934">1934</string>
+    <string name="year_2001">2001</string>
+    <string name="year_2012">2012</string>
 
     <string-array name="decades_array">
+        <item>Any</item>
         <item>1900s</item>
         <item>1910s</item>
         <item>1920s</item>
@@ -26,6 +84,7 @@
     </string-array>
 
     <string-array name="continent_array">
+        <item>Any</item>
         <item>Africa</item>
         <item>Asia</item>
         <item>Australia</item>

@@ -30,6 +30,7 @@ public class Song {
         return mSongTitle;
     }
 
+    //TODO add mood to search criteria
     public String getMood() {
         return mMood;
     }

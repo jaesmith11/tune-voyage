@@ -46,8 +46,7 @@ public class SongAdapter extends ArrayAdapter<Song>{
         TextView releaseDate = (TextView)listItemView.findViewById(R.id.release_date_tview);
         releaseDate.setText(currentSong.getReleaseDate());
 
-        TextView albumTitle = (TextView)listItemView.findViewById(R.id.album_name_tview);
-        albumTitle.setText(currentSong.getAlbumTitle());
+        //TODO create method formatDecade and call it from here
 
         // Display elements from the songs array in a ListView
         return listItemView;

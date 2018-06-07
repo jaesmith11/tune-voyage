@@ -6,23 +6,19 @@
     android:orientation="horizontal"
     android:padding="8dp">
 
-    <ImageView
-        android:layout_width="36dp"
-        android:layout_height="36dp"
-        android:layout_gravity="center"
-        android:layout_marginRight="@dimen/activity_vertical_margin" />
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/song_title_tview"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="4dp"
             style="@style/SongTitleStyle"
             android:text="@string/song_title"/>
 
@@ -38,16 +34,6 @@
                 android:layout_height="wrap_content"
                 android:text="@string/artist_name"/>
 
-            <TextView
-                android:id="@+id/album_name_tview"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginStart="16dp"
-                android:textSize="12sp"
-                android:text="@string/album_name"/>
-
-
         </LinearLayout>
 
     </LinearLayout>
@@ -58,5 +44,6 @@
         android:textSize="12sp"
         android:maxLines="1"
         android:ellipsize="end"
+        android:paddingRight="4dp"
         android:text="@string/release_date"/>
 </LinearLayout>
